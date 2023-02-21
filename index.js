@@ -19,7 +19,7 @@ app.get("/about", (req, res) => {
 });
 app.get("/user", (req, res) => {
   res.setHeader("Content-Type", "text/json");
-  res.send(JSON.stringify(user));
+  res.json(user);
 });
 
 const hostname = "localhost";
